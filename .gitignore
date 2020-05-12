@@ -2,5 +2,8 @@
 .idea/
 */.ipynb_checkpoints/*
 examples/
+zip_my/
+models/
+logs/
 *.pkl
 *.sav
