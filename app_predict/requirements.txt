@@ -8,7 +8,7 @@ attrs==19.3.0
 backcall==0.1.0
 backports.csv==1.0.7
 beautifulsoup4==4.8.2
-bleach==3.1.4
+bleach==3.1.0
 bs4==0.0.1
 catboost==0.21
 certifi==2019.11.28
@@ -123,7 +123,7 @@ sortedcontainers==2.1.0
 soupsieve==2.0
 tempora==2.1.0
 tensorboard==2.0.0
-tensorflow==1.15.2
+tensorflow==1.15.0
 tensorflow-estimator==1.15.1
 termcolor==1.1.0
 terminado==0.8.3
