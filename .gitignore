@@ -1,2 +1,6 @@
 .ipynb_checkpoints
+.idea/
 */.ipynb_checkpoints/*
+examples/
+*.pkl
+*.sav
