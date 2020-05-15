@@ -3,6 +3,9 @@
 */.ipynb_checkpoints/*
 examples/
 zip_my/
+__pycache__/
+__init__.py
+my_note
 models/
 logs/
 *.pkl

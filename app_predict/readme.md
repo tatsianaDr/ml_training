@@ -1,13 +1,32 @@
-##### For build docker image:
+### Movie Reviews Analysis web application 
+This repository contains files necessary for building a Docker image of the application
 
-`docker build -t tatsianadr1/app_predict:1.0.0`
+#### Base Docker Image
+`python:3.7.3-slim`
 
-##### For run application with docker image:
-`docker run -d  -p 5000:5000  tatsianadr1/app_predic`
+### For use the application you can:
+1. Build your own docker image and run it
+2. Pull and run the built docker image 
+
+### 1. Build your own docker image and run it
+
+###### Train and save model
+Run the `./notebooks/imdb_best_model.ipynb` with `jupyter notebook`.
+
+###### Build Docker Image:
+`docker build -t tatsianadr1/app_predict:2.0.0`
 
 
-##### The application launches at port: 
-http://127.0.0.1:5000/predict
+### 2. Pull the built docker image 
 
-`env FLASK_APP=hello.py flask run`
+###### Pull the built docker image
+`docker pull tatsianadr1/app_predict:2.0.0`
+
+
+
+### Run the application  
+`docker run -d  -p 5000:5000  tatsianadr1/app_predict:2.0.0`
+
+### The application launches at port: 
+`http://127.0.0.1:5000/predict`
 
