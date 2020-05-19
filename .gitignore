@@ -6,7 +6,8 @@ zip_my/
 __pycache__/
 __init__.py
 my_note
-models/
+app_predict/notebooks/model/
 logs/
+model/
 *.pkl
 *.sav
