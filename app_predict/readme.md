@@ -10,8 +10,9 @@ This repository contains files necessary for building a Docker image of the appl
 
 ### 1. Build your own docker image and run it
 
-###### Train and save model
+###### Train and save models
 Run the `./notebooks/imdb_best_model.ipynb` with `jupyter notebook`.
+Run the `./notebooks/imdb_final_mlp_model.ipynb` with `jupyter notebook`.
 
 ###### Build Docker Image:
 `docker build -t tatsianadr1/app_predict:2.0.0`

@@ -49,9 +49,9 @@ models_params['MLP'] = {'class': mlp_model.MLPModel,
 models_params['SVM'] = {'class': svm_model.SVMModel,
                         'model_path': 'service/model/svm/svm_final_model.pkl',
                         'preprocessor_path': 'service/model/svm/svm_final_model_preproc.pkl',
-                        'info_path': 'service/model/mlp/svm/svm_model.json'}
+                        'info_path': 'service/model/svm/svm_model.json'}
 
-name_model = "SVM"
+name_model = "MLP"
 
 
 @app.before_first_request
@@ -84,6 +84,12 @@ def review_classifier():
     logger.info("Classifying sentiment review: %s" % (review), )
     if request.method == 'POST':
         return predict_sentiment(model_params[0], app.classifier, app.preprocessor, review)
+
+@app.route('/model', methods=['GET'])
+def get_model_info():
+    if request.method == 'GET':
+        with open(model_params[3], 'rb') as file:
+            return json.load(file)
 
 
 def define_model(name):
